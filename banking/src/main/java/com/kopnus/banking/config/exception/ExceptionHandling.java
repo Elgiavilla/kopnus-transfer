@@ -167,10 +167,6 @@ public class ExceptionHandling {
         if (rootCause != null && rootCause.toLowerCase().contains("duplicate")) {
             code = ResponseCode.DUPLICATE_DATA;
             message = "A record with the same unique value already exists";
-        } else if (rootCause != null && rootCause.toLowerCase().contains("check")) {
-            // CHECK constraint kena = validasi application layer bocor.
-            code = ResponseCode.INSUFFICIENT_STOCK;
-            message = "Operation violates stock constraints";
         } else {
             code = ResponseCode.BAD_REQUEST;
             message = "Operation violates a data constraint";

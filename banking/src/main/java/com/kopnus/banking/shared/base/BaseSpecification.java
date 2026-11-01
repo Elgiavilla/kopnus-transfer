@@ -1,6 +1,8 @@
 package com.kopnus.banking.shared.base;
 
 import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Component;
 
 @Component
 public class BaseSpecification {

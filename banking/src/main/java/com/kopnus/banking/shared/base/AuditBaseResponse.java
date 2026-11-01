@@ -1,5 +1,8 @@
 package com.kopnus.banking.shared.base;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Data;
+
 @Data
 public class AuditBaseResponse {
 
